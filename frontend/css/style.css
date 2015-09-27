@@ -97,3 +97,7 @@ input[type=button].btn-large {
   width: 45%;
   text-align: center;
 }
+
+.text-big {
+  font-size: 160%;
+}
