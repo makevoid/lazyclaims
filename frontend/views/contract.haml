@@ -1,0 +1,18 @@
+.six.column.box.big_m.clouds.white-text
+  %h1 LazyClaim
+  %p View your active contract
+
+.six.column.box
+  %p.bold Contract ID:
+
+  %a{ href: "/contracts/#{@contract_id}" }
+    %span.contract_number
+      #{@contract_id}
+
+  .spacer20
+  %p todo
+
+  %p Your address:
+  %p.bold.deposit_address (loading...)
+
+  -# TODO: we know the user's address through the localStorage

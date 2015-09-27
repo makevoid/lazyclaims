@@ -1,0 +1,71 @@
+.six.column.box.big_m.clouds.white-text.title
+  %h1 LazyClaim
+  %p  Train Delay Insurance
+
+
+/
+  .six.column.box
+    se serve qua c'e' un altro box
+
+
+.six.column.box
+
+  %p
+    LazyClaim lets you insure your train journey with an ethereum smart contract
+  %p
+    The contract is resolved automatically on the Ethereum blockchain
+  %p
+    You can also apply to LazyClaim as
+    %a{ href: "/invest" } investor
+
+
+
+.six.column.box.blue.white-text.train_number
+  %h4 Enter your train number or arrival time and station
+  %input{:name => "flight_num", :placeholder => "ex: 2015-09-27 15:20 Farringdon", :type => "text"}/
+.insure_for.six.column.box.blue2.white-text
+  %h4 Insure for
+  %p.bold
+    £
+    %span.insure_amount_gbp 30
+  %p
+    %span.insure_amount_btc ...
+    BTC
+  %p
+    %span.insure_amount_eth ...
+    ETH
+  .spacer10
+  %input{:max => "50", :min => "5", :name => "insure_amount", :step => "5", :style => "width: 243px", :type => "range", :value => 30}/
+.six.column.box.white.white-text
+  %input.insure.button.button-primary.btn-large{:type => "button", :value => "Insure"}/
+
+
+.step_2.hidden
+  .six.column.box
+    %h4
+      Deposit
+      %span.insure_amount_eth ...
+      ETH to address:
+    %img.deposit_qrcode{:src => "./images/qrcode.gif", :width => "200px"}/
+    %p
+      %span.deposit_address
+        0x0462838f4e30223d51310c9725c51217481141c2
+    .spacer10
+    %a.deposit-done.button.button-primary
+      temp: deposit done
+
+
+
+.step_3.hidden
+  .six.column.box.blue.white-text.link-color-blue
+    %p Your flight has been insured!
+    .spacer20
+    %p Check the contract:
+    .spacer10
+    %a.button.button-primary{ href: "/contracts/0x154c02594e63e09e68ec8526d22f1397cfb8c415ac5a451f6b7a573435769454" }
+      %span.contract_number
+        0x154c025...435769454
+
+
+  .six.column.box.thank_you
+    %p Thank you for using LazyClaim!
